@@ -16,14 +16,27 @@ body {
 .bio-container {
     flex-basis: 50%;
     flex-shrink: 1;
+    display: flex;
+    flex-flow: column;
 }
 
 .section {
-    margin-bottom: 40px;
     display: flex;
     flex-flow: row;
     align-items: center;
     justify-content: space-around;
+    padding: 30px;
+}
+
+.section-separator {
+    align-self: center;
+    width: 400px;
+    border-top: solid 4px #006a22;
+    border-radius: 10px;
+}
+
+.section > div {
+    flex-grow: 1;
 }
 
 .material-symbols-outlined {
