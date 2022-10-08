@@ -45,6 +45,13 @@ body {
     margin-right: 20px;
 }
 
+.numbers {
+    font-size: 45px !important;
+    margin-right: 20px;
+    align-self:  baseline;
+    padding-top: 10px;
+}
+
 .separator {
     flex-basis: 150px;
 }
