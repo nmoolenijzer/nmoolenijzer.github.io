@@ -52,6 +52,14 @@ body {
     padding-top: 10px;
 }
 
+.showcase {
+    margin-left: 30px;
+}
+
+.showcase > img {
+    margin-right: 15px;
+}
+
 .separator {
     flex-basis: 150px;
 }

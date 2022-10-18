@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+
+    <title>Assignment 2</title>
+
+    <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
+    <!-- FONT FROM: https://developers.google.com/fonts/docs/getting_started -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <!-- ALL ICONS FROM: https://fonts.google.com/icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+</head>
+
+<body>
+    <div class="header">
+        <h1>Nick Moolenijzer</h1>
+        <div class="subtitle">HCDE 533: Digital Fabrication</div>
+    </div>
+
+    <div class="showcase">
+
+        <img src="assets/assignment2/render.png" height="400px" />
+        <img src="assets/assignment2/main.jpeg" height="400px" />
+    </div>
+    <div class="body-container">
+        <div class="bio-container">
+            <h2>Steps</h2>
+            <!-- Document your project on a webpage linked to from your main webpage.
+                You will be expected to talk about your project in class next week using your documentation.
+                Your documentation should include source files, laser cutter settings, and a write up about your process! -->
+            <div class="section">
+                <span class="numbers">
+                    1
+                </span>
+                <div>
+                </div>
+                <div>
+                    I started with some inspiration from <a href="https://parametrichouse.com/wallart1/">Parametric
+                        House</a><br />
+                    <img src="https://parametrichouse.com/wp-content/uploads/2019/08/laser-cutting-design-1-5-2019-200003.jpg"
+                        width="500px" />
+                    <br />But unfortunately they didn't have much in the way of instructions or tutorials, so I had to
+                    figure things out on my own!
+                </div>
+            </div>
+            <div class="section">
+                <span class="numbers">
+                    2
+                </span>
+                <div>
+                    I started out with the base, which I knew would be relatively straight forward. I wanted to make 3
+                    panels that had a certain number of notches that depended on the length of the desired piece and the
+                    notch size (i.e., cardboard thickness)
+                    The result was this parametric design. Using my specifications of a 15in piece with cardboard
+                    thickness of 0.17in, this is the output of the Grasshopper calculation:
+                    <br />
+                    <img src="assets/assignment2/base.png" width="400px" />
+                    <br /><br />
+                    After that I got started on the panels that would be put into the notches.
+                </div>
+            </div>
+            <div class="section">
+                <span class="numbers">
+                    3
+                </span>
+                <div>
+                    The first thing I tackled was the morphed surface that I would use to trim the plain rectangle
+                    panels. I knew this would be the most difficult part, but luckily I found this tutorial on YouTube
+                    for how to make such a surface:
+                    <a href="https://www.youtube.com/watch?v=MKXFKjI-piA">How to make random wavy surface in Rhino
+                        Grasshopper</a>
+                    <br />
+                    <br />
+                    I followed this tutorial to make the parametric random surface. I started with a plain rectangle
+                    that had an arbitrary width and the same length as the panels in step 2 so that they would match up.
+                    Then I divided the surface by a parametric value (in this case 5) into a grid of points. Using that
+                    list of points and the random number generator, I created some amplitude vectors to move the points
+                    in random up and down directions.
+                    Then I used the surface from points function to create a new surface using these randomly
+                    distributed points! This is what I ended up with:
+                    <br />
+                    <img src="assets/assignment2/wavy_surface.png" width="400px" />
+
+                </div>
+            </div>
+            <div class="section">
+                <span class="numbers">
+                    4
+                </span>
+                <div>
+                    With the tutorial done, I could get back to business! I created the basic board shape that I would
+                    use to intersect with the surface created in step 3. I used the linear array functionality to create
+                    copies that matched up with the length of the wavy surface (and consequently, the length of the
+                    panels in step 2).
+                    Then I extruded the wavy surface and used it to trim the boards and I used the boards to trim the
+                    wavy surface, then joined the curves to create outlines.
+                    Then I added the 3 notches which would connect to the panels from step 2 and used linear array on
+                    those as well, then did the same intersect/join process on them.
+                    <br />
+                    <img src="assets/assignment2/intersection.png" width="400px" />
+                </div>
+            </div>
+            <div class="section">
+                <span class="numbers">
+                    5
+                </span>
+                <div>
+                    Finally, the most difficult part was getting them all back on one plane and distributed evenly.
+                    Unfortunately I could not find a way to do this in Grasshopper, but I did realize I could bake them
+                    on top of each other and distribute in Rhino, so I did that instead!
+                    <br /><br />
+                    Ultimately, my Grasshopper file ended up very complicated, but here's a high level snapshot of what
+                    each section contains!
+                    <img src="assets/assignment2/gh_description.png" width="800px" />
+                </div>
+            </div>
+            <div class="section">
+                <span class="numbers">
+                    6
+                </span>
+                <div>
+                    With all of that done, I exported to Illustrator, arranged nicely, and headed to the laser cutter!
+                    My laser cutter
+                    settings were 50% power and 25% speed, on vector cut.
+                    <br />
+                    <img src="assets/assignment2/cut_outs.jpeg" width="500px" />
+
+                </div>
+            </div>
+            <div class="section">
+                <span class="numbers">
+                    7
+                </span>
+                <div>
+
+                    Finally I assembled!<br />
+                    <img src="assets/assignment2/front.jpeg" width="500px" />
+                    <img src="assets/assignment2/main.jpeg" width="500px" />
+
+                </div>
+            </div>
+        </div>
+        <div class="separator"></div>
+        <div class="assignments-container">
+            <h2>Resources</h2>
+            <div class="assignments">
+                <div class="assignment">
+                    My creations:
+                    <a href="assets/assignment2/grasshopper_file.gh" download>
+                        <p>Grasshopper definition</p>
+                    </a>
+                    <a href="assets/assignment2/rhino_model.3dm" download>
+                        <p>Rhino file (3d and flat)</p>
+                    </a>
+                    <a href="assets/assignment2/illustrator_file.ai" download>
+                        <p>Illustrator file</p>
+                    </a>
+                    External resources:
+                    <a href="https://www.youtube.com/watch?v=MKXFKjI-piA">
+                        <p>Wavy surface tutorial</p>
+                    </a>
+                    <a href="https://docs.mcneel.com/">
+                        <p>Rhino documentation</p>
+                    </a>
+                    <a href="https://grasshopperdocs.com/">
+                        <p>Grasshopper documentation</p>
+                    </a>
+                    <a href="http://wiki.bk.tudelft.nl/toi-pedia/Grasshopper_Basic_List_Actions">
+                        <p>Blog on list actions</p>
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=fpAsd8c7mwU">
+                        <p>Trim/split tutorial</p>
+                    </a>
+                    <p>Lots of Rhino forum posts, Grasshopper forum posts, and Reddit posts:</p>
+                    <a href="https://docs.mcneel.com/">
+                        1
+                    </a>,
+                    <a href="https://discourse.mcneel.com/t/what-is-a-brep/609">
+                        2
+                    </a>,
+                    <a href="https://discourse.mcneel.com/t/how-to-convert-openbrep-to-closed-brep/76732">
+                        3
+                    </a>,
+                    <a href="https://discourse.mcneel.com/t/how-to-spread-evenly-several-objects/689">
+                        4
+                    </a>,
+                    <a href="https://discourse.mcneel.com/t/open-a-closed-curve/18738">
+                        5
+                    </a>,
+                    <a href="https://discourse.mcneel.com/t/closing-open-curves/78902/4">
+                        6
+                    </a>,
+                    <a href="https://discourse.mcneel.com/t/unable-to-join-planar-curves/97402/10">
+                        7
+                    </a>,
+                    <a href="https://discourse.mcneel.com/t/gh-why-doesnt-join-curves-join-curves-bug/44449/3">
+                        8
+                    </a>,
+                    <a href="https://www.grasshopper3d.com/forum/topics/brep-edge-types">
+                        9
+                    </a>,
+                    <a href="https://www.grasshopper3d.com/forum/topics/joining-polyline-curves-and">
+                        10
+                    </a>,
+                    <a
+                        href="https://www.grasshopper3d.com/forum/topics/indexing-variables-in-expression-editor?page=1&commentId=2985220%3AComment%3A666110&x=1#2985220Comment666110">
+                        11
+                    </a>,
+                    <a href="https://www.reddit.com/r/rhino/comments/lneqyq/help_with_trimmingintersecting_surfaces/">
+                        12
+                    </a>,
+                    <a
+                        href="httpshttps://www.reddit.com/r/rhino/comments/g3evuc/trouble_with_cutting_shapes_out_of_surfaces/">
+                        13
+                    </a>
+
+                </div>
+            </div>
+            <h2>Laser cutter settings</h2>
+            <div class="assignments">
+                <div class="assignment">
+                    TBD once I get to print :)
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div>Thanks to Google for the cool <a href="https://developers.google.com/fonts">fonts</a> + <a
+                href="https://fonts.google.com/icons">icons</a> :)</div>
+    </footer>
+</body>
+
+</html>
