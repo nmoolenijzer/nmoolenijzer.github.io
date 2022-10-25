@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+
+    <title>Assignment 3</title>
+
+    <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
+    <!-- FONT FROM: https://developers.google.com/fonts/docs/getting_started -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <!-- ALL ICONS FROM: https://fonts.google.com/icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+</head>
+
+<body>
+    <div class="header">
+        <h1>Nick Moolenijzer</h1>
+        <div class="subtitle">HCDE 533: Digital Fabrication</div>
+    </div>
+    <div class="body-container">
+        <div class="bio-container">
+            <h2>Steps</h2>
+            <div class="section">
+                <span class="numbers">
+                    1
+                </span>
+                <div>
+                </div>
+                <div>
+                    Unfortunately I already had my printer set up - so I don't have any pictures! But I will describe what I did as best as I remember.
+                    <br /><br />
+                    First I took all of the pieces out of their boxes and laid the base flat. I followed the step by step directions to screw on the power source, front panel, and various moving parts. I added to the screw like pole to the motor and attached the arm to that. I also added the belt to the top arm to move the extruder around. Then I connected all of the wiring based on the letter values, chose the correct voltage, and turned on the power.
+                    <br /><br />
+                    This process also included checking for loose screws throughout the process, tightening the eccentric nut on the various arms so that there would not be any wobble in the extruder, and finally bed leveling in the next step.
+                    <br />
+                    <br />
+                    For me, the process took about 1.5 hr.
+                </div>
+            </div>
+            <div class="section">
+                <span class="numbers">
+                    2
+                </span>
+                <div>
+                    I followed the tutorial to do a bed leveling, which consisted of moving the extruder around to various parts of the plate and moving the plate up or down with the gears under until paper slid under with some drag.
+                    <br />
+                    <br />
+                    Then, I printed the test level print to make sure the adhesion was sufficient.
+                    <br />
+                    <img src="assets/assignment3/level_test.jpeg" width="400px" />
+                    <br /><br />
+                    <video width="500" controls>
+                        <source src="assets/assignment3/level_test_MOV_AdobeExpress.mp4" type="video/mp4">
+                        Browser does not support video
+                    </video>
+                </div>
+            </div>
+            <div class="section">
+                <span class="numbers">
+                    3
+                </span>
+                <div>
+                    After that, I modeled some basic 2cm cubes in Rhino and exported them to Cura to slice. I printed the following cubes:
+                    <br />
+
+                    <img src="assets/assignment3/cubes.jpeg" width="600px" />
+                    <br />
+                    From left to right:
+                    <br />
+                    The low fidelity model took 24m 44s to print and was 2.00cm x 2.00cm x 1.98cm
+                    <br />
+                    The standard fidelity model took 32m 7s to print and was 1.99cm x 2.00cm x 1.99cm
+                    <br />
+                    The super fidelity model took 57m 23s to print and was 1.99cm x 2.00cm x 1.99cm
+                    <br />
+                    The concentric standard fidelity model took 31m 48s to print and was 1.99cm x 2.00cm x 1.99cm
+                    <br />
+
+                </div>
+            </div>
+            <div class="section">
+                <span class="numbers">
+                    4
+                </span>
+                <div>
+                    Then, I modeled some basic 3cm tubes in Rhino and exported them to Cura to slice. One was 0.4mm thick wall (single wall, since extruder is 0.4mm) and the other was 0.8mm thick wall, a double width, with random z-seam alignment. I printed the following tubes:
+                    <br />
+                    
+                    <img src="assets/assignment3/tubes.jpeg" width="600px" />
+                    <br />
+                    From left to right:
+                    <br />
+                    The single thickness tube took 26m 59s to print and was 2.99cm tall and 0.44mm thick
+                    <br />
+                    The double thickness tube took 31m 17s to print and was 2.99cm tall and 0.97mm thick
+                    <br />
+
+                </div>
+            </div>
+            <div class="section">
+                <span class="numbers">
+                    5
+                </span>
+                <div>
+                    Next, I modeled some basic 3cm cylinders in Rhino and exported them to Cura to slice. I exported one with 0.1mm tolerance and the other 0.01mm tolerance. I printed the following cylinders:
+                    <br />
+                    
+                    <img src="assets/assignment3/cylinders.jpeg" width="600px" />
+                    <br />
+                    From left to right:
+                    <br />
+                    The 0.1mm cylinder took 1h 2m 24s to print and was 2.99cm tall and 3.00cm in diameter.
+                    <br />
+                    The 0.01mm cylinder took 1h 4m 23s to print and was 2.99cm tall and 2.96cm in diameter.
+                    <br />
+                    The sideways cylinder took 1h 18m 53s to print and was 3.00cm tall and 2.98cm in diameter.
+                    <br />
+                    The spiral contour cylinder took 32m 52s to print and was 3.01cm tall and 2.97cm in diameter.
+                    <br />
+
+                </div>
+            </div>
+            <div class="section">
+                <span class="numbers">
+                    6
+                </span>
+                <div>
+                    Finally, I modeled some basic nested tubes in Rhino and exported them to Cura to slice. I printed the following nested tubes:
+                    <img src="assets/assignment3/nested.jpeg" width="600px" />
+                    <img src="assets/assignment3/nested_2.jpeg" width="600px" />
+                    <br />
+                    This took 2h 42m 35s to print.
+
+                </div>
+            </div>
+        </div>
+        <div class="separator"></div>
+        <div class="assignments-container">
+            <h2>Resources</h2>
+            <div class="assignments">
+                <div class="assignment">
+                    My creations:
+                    <a href="assets/assignment3/2cmCube.3dm" download>
+                        <p>Cube 3dm</p>
+                    </a>
+                    <a href="assets/assignment3/2cmCube.stl" download>
+                        <p>Cube stl</p>
+                    </a>
+                    <a href="assets/assignment3/3cmCylinder.3dm" download>
+                        <p>Cylinder 3dm</p>
+                    </a>
+                    <a href="assets/assignment3/3cmCylinder0.001mm.stl" download>
+                        <p>Cylinder 0.001mm stl</p>
+                    </a>
+                    <a href="assets/assignment3/3cmCylinder0.1mm.stl" download>
+                        <p>Cylinder 0.1mm stl</p>
+                    </a>
+                    <a href="assets/assignment3/3cmTubeSingle.3dm" download>
+                        <p>Tube single wall 3dm</p>
+                    </a>
+                    <a href="assets/assignment3/3cmTubeSingle.stl" download>
+                        <p>Tube single wall stl</p>
+                    </a>
+                    <a href="assets/assignment3/3cmTubeDouble.3dm" download>
+                        <p>Tube double wall 3dm</p>
+                    </a>
+                    <a href="assets/assignment3/3cmTubeDouble.stl" download>
+                        <p>Tube double wall stl</p>
+                    </a>
+                    <a href="assets/assignment3/NestedTubes.3dm" download>
+                        <p>Nested tube 3dm</p>
+                    </a>
+                    <a href="assets/assignment3/NestedTubes.stl" download>
+                        <p>Nested tube stl</p>
+                    </a>
+                    External resources:
+                    <a href="https://www.youtube.com/watch?v=P5HJgIrgGXc">
+                        <p>Eccentric nut adjustment</p>
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=N9aWBjbj3Ag">
+                        <p>Leveling tutorial 1</p>
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=_EfWVUJjBdA">
+                        <p>Leveling tutorial 2</p>
+                    </a>
+                    <a href="https://www.thingiverse.com/thing:3235018">
+                        <p>Thingiverse for bed leveling model</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div>Thanks to Google for the cool <a href="https://developers.google.com/fonts">fonts</a> + <a
+                href="https://fonts.google.com/icons">icons</a> :)</div>
+    </footer>
+</body>
+
+</html>
