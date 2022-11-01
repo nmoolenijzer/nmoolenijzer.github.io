@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+
+    <title>Assignment 4</title>
+
+    <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
+    <!-- FONT FROM: https://developers.google.com/fonts/docs/getting_started -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <!-- ALL ICONS FROM: https://fonts.google.com/icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+</head>
+
+<body>
+    <div class="header">
+        <h1>Nick Moolenijzer</h1>
+        <div class="subtitle">HCDE 533: Digital Fabrication</div>
+    </div>
+    <div class="body-container">
+        <div class="bio-container">
+            <h2>Steps</h2>
+            <div class="section">
+                <span class="numbers">
+                    1
+                </span>
+                <div>
+                </div>
+                <div>
+                    I started off in Rhino with a basic 60mm x 60mm square that I planned to add box joints to. I wasn't sure how they would all fit together in a cube & I was unsure about the fit, so I decided to start with just 2 sides of notches.<br />
+                    <br />
+                    <br />
+                    I added equally distributed rectangles along two sides using the linear array function, then trimmed both curves, and extruded to create a model to print.
+                    <br />
+                    <img src="assets/assignment4/FirstPrintFlat.png" width="400px" />
+                    <img src="assets/assignment4/FirstPrint3d.png" width="400px" />
+                </div>
+            </div>
+            <div class="section">
+                <span class="numbers">
+                    2
+                </span>
+                <div>
+                    This print was really helpful with 3d visualization, but I found that the equally sized notches and rectangle pegs did not fit well considering the precision of the machine. The second time around, I updated the rectangular pegs to be 4.8mm and the notches to be 5.2mm so that there would be +- 0.4mm of wiggle room for pushing the pieces together.
+                    <br /><br />
+                    I followed the same process as above, but this time with all 4 sides notch-ified:
+                    <br />
+                    <img src="assets/assignment4/SecondPrintFlat.png" width="400px" />
+                    <img src="assets/assignment4/SecondPrint3d.png" width="400px" />
+                </div>
+            </div>
+            <div class="section">
+                <span class="numbers">
+                    3
+                </span>
+                <div>
+                    This worked much better! I printed 3 at first to make sure that it would work in a the corner, and I was happy with the result. The biggest struggle was getting all of the adhesive base out of the notches.
+                    <br />
+                    <img src="assets/assignment4/Print.jpeg" width="400px" />
+                    <video width="500" controls>
+                        <source src="assets/assignment4/Printing.mp4" type="video/mp4">
+                        Browser does not support video
+                    </video>
+
+                </div>
+            </div>
+            <div class="section">
+                <span class="numbers">
+                    4
+                </span>
+                <div>
+                    After testing out the first 3 sides, I printed the other 3 sides to make a cube, and snapped them all together! It was very satisfying having them all fit and stick together well.
+                    <br />
+                    <img src="assets/assignment4/OpenTop.jpeg" width="400px" />
+                    <img src="assets/assignment4/Final.jpeg" width="400px" />
+                    <video width="500" controls>
+                        <source src="assets/assignment4/Final.mp4" type="video/mp4">
+                        Browser does not support video
+                    </video>
+
+                </div>
+            </div>
+        </div>
+        <div class="separator"></div>
+        <div class="assignments-container">
+            <h2>Resources</h2>
+            <div class="assignments">
+                <div class="assignment">
+                    My creations:
+                    <a href="assets/assignment4/box.3dm" download>
+                        <p>Panels 3dm</p>
+                    </a>
+                    <a href="assets/assignment4/box.stl" download>
+                        <p>Panels stl</p>
+                    </a>
+                    External resources:
+                    <a href="https://express.adobe.com/tools/convert-to-mp4">
+                        <p>Video conversion</p>
+                    </a>
+                    <a href="https://blog.inventables.com/2014/06/learn-about-milling-inside-corner.html">
+                        <p>Learning about inside corners</p>
+                    </a>
+                    Thanks to the various posts in the Discord channel for the help understanding notches / fit! Especially for posts from Junchao.
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div>Thanks to Google for the cool <a href="https://developers.google.com/fonts">fonts</a> + <a
+                href="https://fonts.google.com/icons">icons</a> :)</div>
+    </footer>
+</body>
+
+</html>
