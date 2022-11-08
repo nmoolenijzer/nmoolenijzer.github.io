@@ -30,7 +30,8 @@
                 <div>
                 </div>
                 <div>
-                    For the first part of combining two meshes, I started off with the following two meshes from Thingiverse:
+                    For the first part of combining two meshes, I started off with the following two meshes from
+                    Thingiverse:
                     <br />
                     <a href="https://www.thingiverse.com/thing:2120591/files">Phone stand</a>
                     <br />
@@ -47,7 +48,9 @@
                     2
                 </span>
                 <div>
-                    Unfortunately, after a long time struggling with getting the meshes to combine into a single good mesh, I realized the phone stand was a bad mesh to start with. Instead of trying to fix that mesh, I found this headphone stand to work with instead:
+                    Unfortunately, after a long time struggling with getting the meshes to combine into a single good
+                    mesh, I realized the phone stand was a bad mesh to start with. Instead of trying to fix that mesh, I
+                    found this headphone stand to work with instead:
                     <br />
                     <a href="https://www.thingiverse.com/thing:2050885/files">Headphone stand</a>
                     <br />
@@ -59,7 +62,9 @@
                     3
                 </span>
                 <div>
-                    This worked a lot better! I was able to first position the hand up against the headphone stand in the position I wanted, then slowly trimmed away the points and edges from the hand that I didn't need.
+                    This worked a lot better! I was able to first position the hand up against the headphone stand in
+                    the position I wanted, then slowly trimmed away the points and edges from the hand that I didn't
+                    need.
                 </div>
             </div>
             <div class="section">
@@ -67,7 +72,9 @@
                     4
                 </span>
                 <div>
-                    I was able to trim the hands using the headphone stand mesh to get the fit perfect. Then I moved the hands slightly into the mesh, did a boolean mesh union, and a quad remesh. Finally this resulted in a closed mesh which Rhino considered a "good mesh" so I counted it as a win!
+                    I was able to trim the hands using the headphone stand mesh to get the fit perfect. Then I moved the
+                    hands slightly into the mesh, did a boolean mesh union, and a quad remesh. Finally this resulted in
+                    a closed mesh which Rhino considered a "good mesh" so I counted it as a win!
                     <img src="assets/assignment5/rhino_models.png" width="800px" />
                 </div>
             </div>
@@ -85,10 +92,18 @@
                     6
                 </span>
                 <div>
-                    Moving onto the next phase, I started working on my lamp mesh. I decided I wanted to make a replica of my face on a hanging lamp?
+                    Moving onto the next phase, I started working on my lamp mesh. I decided I wanted to make a replica
+                    of my face on a hanging lamp?
                     <br />
                     <br />
-                    I used the iOS app polycam to scan my head, and after a few very bad attempts, I came up with one that was almost good.
+                    I used the iOS app Polycam to scan my head, and after a few very bad attempts, I came up with one
+                    that was almost good.
+                    <br />
+                    <video width="800" controls>
+                        <source src="assets/assignment5/polycam_model.mp4" type="video/mp4">
+                        Browser does not support video
+                    </video>
+                    <br />
                     <br />
                     Which resulted in the following STL:
                     <br />
@@ -102,7 +117,9 @@
                     7
                 </span>
                 <div>
-                    Finally, I cleaned up the mesh with deleting/trimming points and remeshing, mirrored the face to complete a shape, and added a top and bottom. I trimmed the top with a 27mm round hole so that the plug can fit through but not the rest of the housing.
+                    Finally, I cleaned up the mesh with deleting/trimming points and remeshing, mirrored the face to
+                    complete a shape, and added a top and bottom. I trimmed the top with a 27mm round hole so that the
+                    plug can fit through but not the rest of the housing.
                     <br />
                     <img src="assets/assignment5/lamp_first_pass.png" width="800px" />
                 </div>
@@ -114,20 +131,80 @@
             <div class="assignments">
                 <div class="assignment">
                     My creations:
-                    <a href="assets/assignment4/box.3dm" download>
-                        <p>Panels 3dm</p>
+                    <a href="assets/assignment5/headphone_stand_hands_FINAL.3dm" download>
+                        <p>Merged headphone stand 3dm</p>
                     </a>
-                    <a href="assets/assignment4/box.stl" download>
-                        <p>Panels stl</p>
+                    <a href="assets/assignment5/headphone_stand_hands_FINAL.stl" download>
+                        <p>Merged headphone stand stl</p>
+                    </a>
+                    <a href="assets/assignment5/head.stl" download>
+                        <p>Lamp preliminary stl</p>
                     </a>
                     External resources:
                     <a href="https://express.adobe.com/tools/convert-to-mp4">
                         <p>Video conversion</p>
                     </a>
-                    <a href="https://blog.inventables.com/2014/06/learn-about-milling-inside-corner.html">
-                        <p>Learning about inside corners</p>
+                    <a href="http://docs.mcneel.com/">
+                        <p>Rhino documentation</p>
                     </a>
-                    Thanks to the various posts in the Discord channel for the help understanding notches / fit! Especially for posts from Junchao.
+                    <a href="https://wiki.mcneel.com/rhino/booleanfaq">
+                        <p>Rhino wiki</p>
+                    </a>
+                    <a href="https://artisticrender.com/boolean-modifier-problems-and-how-to-solve-them/">
+                        <p>Boolean modifier problems and how to solve them</p>
+                    </a>
+                    <a href="https://apps.apple.com/us/app/polycam-lidar-3d-scanner/id1532482376">
+                        <p>Polycam iOS app</p>
+                    </a>
+                    <p>Reddit posts:
+                        <a
+                            href="https://www.reddit.com/r/rhino/comments/9338gc/how_do_i_join_these_mesh_surfaces_my_booleanunion/">
+                            1
+                        </a>,
+                        <a
+                            href="https://www.reddit.com/r/rhino/comments/5c5812/how_to_select_edges_only_in_a_polysurface/">
+                            2
+                        </a>,
+                        <a href="https://discourse.mcneel.com/t/combine-mesh-in-rhino/47565">
+                            3
+                        </a>,
+                        <a href="https://www.reddit.com/r/rhino/comments/cqy5u7/merging_two_meshes_in_rhino3d/">
+                            4
+                        </a>,
+                        <a
+                            href="https://www.reddit.com/r/rhino/comments/bbbpmd/mesh_has_18_pairs_of_faces_that_intersect_with/">
+                            5
+                        </a>,
+                        <a
+                            href="https://discourse.mcneel.com/t/is-it-possible-to-have-clean-offset-mesh-without-self-intersecting-faces/126756/2">
+                            6
+                        </a>,
+                        <a href="https://discourse.mcneel.com/t/joining-disjointed-meshes/22065">
+                            7
+                        </a>,
+                        <a href="https://discourse.mcneel.com/t/how-to-convert-open-mesh-to-close-mesh-in-rhino/47756">
+                            8
+                        </a>,
+                        <a
+                            href="https://www.rhino3d.com/searchresults/?q=forum%20topics%20mesh%20has%20pairs%20of%20faces%20that%20intersect%20how%20to%20identify%20them">
+                            9
+                        </a>,
+                        <a
+                            href="https://www.zbrushcentral.com/t/mesh-faces-that-intersect-how-do-i-resolve-these/314845">
+                            10
+                        </a>,
+                        <a href="https://discourse.mcneel.com/t/mesh-has-pairs-of-faces-that-intersect-each-other/7513">
+                            11
+                        </a>,
+                        <a href="https://discourse.mcneel.com/t/mesh-boolean-difference-operation-problem/108054">
+                            12
+                        </a>
+                        <a
+                            href="https://www.reddit.com/r/rhino/comments/5c5812/how_to_select_edges_only_in_a_polysurface/">13</a>
+
+                    </p>
+                    Thanks to the various posts in the Discord channel for the help!
+                    Especially for posts from Junchao about Rhino commands.
                 </div>
             </div>
         </div>
