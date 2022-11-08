@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+
+    <title>Assignment 5</title>
+
+    <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
+    <!-- FONT FROM: https://developers.google.com/fonts/docs/getting_started -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <!-- ALL ICONS FROM: https://fonts.google.com/icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+</head>
+
+<body>
+    <div class="header">
+        <h1>Nick Moolenijzer</h1>
+        <div class="subtitle">HCDE 533: Digital Fabrication</div>
+    </div>
+    <div class="body-container">
+        <div class="bio-container">
+            <h2>Steps</h2>
+            <div class="section">
+                <span class="numbers">
+                    1
+                </span>
+                <div>
+                </div>
+                <div>
+                    For the first part of combining two meshes, I started off with the following two meshes from Thingiverse:
+                    <br />
+                    <a href="https://www.thingiverse.com/thing:2120591/files">Phone stand</a>
+                    <br />
+                    <img src="assets/assignment5/phone_stand.png" width="400px" />
+                    <br />
+                    <br />
+                    <a href="https://www.thingiverse.com/thing:5566927/files">Computer stand</a>
+                    <br />
+                    <img src="assets/assignment5/hand_stand.png" width="400px" />
+                </div>
+            </div>
+            <div class="section">
+                <span class="numbers">
+                    2
+                </span>
+                <div>
+                    Unfortunately, after a long time struggling with getting the meshes to combine into a single good mesh, I realized the phone stand was a bad mesh to start with. Instead of trying to fix that mesh, I found this headphone stand to work with instead:
+                    <br />
+                    <a href="https://www.thingiverse.com/thing:2050885/files">Headphone stand</a>
+                    <br />
+                    <img src="assets/assignment5/headphone_stand.png" width="400px" />
+                </div>
+            </div>
+            <div class="section">
+                <span class="numbers">
+                    3
+                </span>
+                <div>
+                    This worked a lot better! I was able to first position the hand up against the headphone stand in the position I wanted, then slowly trimmed away the points and edges from the hand that I didn't need.
+                </div>
+            </div>
+            <div class="section">
+                <span class="numbers">
+                    4
+                </span>
+                <div>
+                    I was able to trim the hands using the headphone stand mesh to get the fit perfect. Then I moved the hands slightly into the mesh, did a boolean mesh union, and a quad remesh. Finally this resulted in a closed mesh which Rhino considered a "good mesh" so I counted it as a win!
+                    <img src="assets/assignment5/rhino_models.png" width="800px" />
+                </div>
+            </div>
+            <div class="section">
+                <span class="numbers">
+                    5
+                </span>
+                <div>
+                    Finally, I imported to Cura and sliced it to make sure the print would work well.
+                    <img src="assets/assignment5/cura_slice.png" width="800px" />
+                </div>
+            </div>
+            <div class="section">
+                <span class="numbers">
+                    6
+                </span>
+                <div>
+                    Moving onto the next phase, I started working on my lamp mesh. I decided I wanted to make a replica of my face on a hanging lamp?
+                    <br />
+                    <br />
+                    I used the iOS app polycam to scan my head, and after a few very bad attempts, I came up with one that was almost good.
+                    <br />
+                    <video width="500" controls>
+                        <source src="assets/assignment5/polycam_model.mp4" type="video/mp4">
+                        Browser does not support video
+                    </video>
+                    <br />
+                    <br />
+                    Which resulted in the following STL:
+                    <br />
+                    <img src="assets/assignment5/polycam_stl.png" width="800px" />
+
+
+                </div>
+            </div>
+            <div class="section">
+                <span class="numbers">
+                    7
+                </span>
+                <div>
+                    Finally, I cleaned up the mesh with deleting/trimming points and remeshing, mirrored the face to complete a shape, and added a top and bottom. I trimmed the top with a 27mm round hole so that the plug can fit through but not the rest of the housing.
+                    <br />
+                    <img src="assets/assignment5/lamp_first_pass.png" width="800px" />
+                </div>
+            </div>
+        </div>
+        <div class="separator"></div>
+        <div class="assignments-container">
+            <h2>Resources</h2>
+            <div class="assignments">
+                <div class="assignment">
+                    My creations:
+                    <a href="assets/assignment4/box.3dm" download>
+                        <p>Panels 3dm</p>
+                    </a>
+                    <a href="assets/assignment4/box.stl" download>
+                        <p>Panels stl</p>
+                    </a>
+                    External resources:
+                    <a href="https://express.adobe.com/tools/convert-to-mp4">
+                        <p>Video conversion</p>
+                    </a>
+                    <a href="https://blog.inventables.com/2014/06/learn-about-milling-inside-corner.html">
+                        <p>Learning about inside corners</p>
+                    </a>
+                    Thanks to the various posts in the Discord channel for the help understanding notches / fit! Especially for posts from Junchao.
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div>Thanks to Google for the cool <a href="https://developers.google.com/fonts">fonts</a> + <a
+                href="https://fonts.google.com/icons">icons</a> :)</div>
+    </footer>
+</body>
+
+</html>
