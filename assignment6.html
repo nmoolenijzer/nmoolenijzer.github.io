@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+
+    <title>Assignment 6</title>
+
+    <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
+    <!-- FONT FROM: https://developers.google.com/fonts/docs/getting_started -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <!-- ALL ICONS FROM: https://fonts.google.com/icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+</head>
+
+<body>
+    <div class="header">
+        <h1>Nick Moolenijzer</h1>
+        <div class="subtitle">HCDE 533: Digital Fabrication</div>
+    </div>
+    <div class="body-container">
+        <div class="bio-container">
+            <h2>Steps</h2>
+            <div class="section">
+                <span class="numbers">
+                    1
+                </span>
+                <div>
+                </div>
+                <div>
+                    For part 1 of molding and casting, I decided I wanted to make a simple ring. I started off by making measurements of my finger and coming up with a measurement for the ring center:
+                    <br />
+                    <img src="assets/assignment6/ring measure.png" width="400px" />
+                </div>
+            </div>
+            <div class="section">
+                <span class="numbers">
+                    2
+                </span>
+                <div>
+                    Then I moved into Rhino and created a ring mold. To do this, I:
+                    <br />
+                    - created a simple ring by joining a tube and sphere with the measurement from above
+                    <br />
+                    - added a sprue to the top of the sphere for pouring
+                    <br />
+                    - created a box with extruded rectangles/cubes around the ring
+                    <br />
+                    - created a plane to split the ring & box - the parting line was easy to spot without any special measures
+                    <br />
+                    - added a bottom to the boxes and created cylinders to union/difference for keys
+                    <br />
+                    <img src="assets/assignment6/mold1.png" width="400px" />
+                    <img src="assets/assignment6/mold2.png" width="400px" />
+                </div>
+            </div>
+            <div class="section">
+                <span class="numbers">
+                    3
+                </span>
+                <div>
+                    After that, I printed the top and bottom mold! They ~mostly~ turned out well, but unfortunately I moved the plate ~8 hours in, so the very top of the second mold isn't finished on top, but there was plenty of space for the silicone so I decided it was alright.
+                    <br />
+                    <img src="assets/assignment6/print.png" width="400px" />
+                    <img src="assets/assignment6/printed.png" width="400px" />
+                </div>
+            </div>
+            <div class="section">
+                <span class="numbers">
+                    4
+                </span>
+                <div>
+                    After that, I mixed the silicone and poured them into the mold makers!
+                    <img src="assets/assignment6/mold-making.png" width="400px" />
+                </div>
+            </div>
+        </div>
+        <div class="separator"></div>
+        <div class="assignments-container">
+            <h2>Resources</h2>
+            <div class="assignments">
+                <div class="assignment">
+                    My creations:
+                    <a href="assets/assignment6/ring_mold.3dm" download>
+                        <p>Ring mold 3dm</p>
+                    </a>
+                    <a href="assets/assignment6/ring_mold1.stl" download>
+                        <p>Ring mold stl 1</p>
+                    </a>
+                    <a href="assets/assignment6/ring_mold2.stl" download>
+                        <p>Ring mold stl 2</p>
+                    </a>
+                    External resources:
+                    <a href="https://www.google.com/search?q=split+with+plane+rhino&oq=split+with+plane+rhino&aqs=chrome..69i57.6073j0j1&sourceid=chrome&ie=UTF-8">
+                        <p>Google answer</p>
+                    </a>
+                    <a href="https://msd-makerspaces.gitbook.io/next-lab/3d-printing/key-techniques/split-models-rhino-3d-and-physical-joining">
+                        <p>NExT Lab</p>
+                    </a>
+                    <a href="https://en.wikipedia.org/wiki/Sprue_(manufacturing)#:~:text=A%20sprue%20is%20the%20vertical,of%20material%20into%20the%20mold">
+                        <p>Sprue Wikipedia</p>
+                    </a>
+                    <a href="https://docs.mcneel.com/">
+                        <p>Rhino documentation</p>
+                    </a>
+                    Thanks to the various posts in the Discord channel for the help!
+                    Especially for posts from Junchao about mold making, Andy's question and screenshot which was super helpful, and Noelle's tips & tricks (e.g., ironing)
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div>Thanks to Google for the cool <a href="https://developers.google.com/fonts">fonts</a> + <a
+                href="https://fonts.google.com/icons">icons</a> :)</div>
+    </footer>
+</body>
+
+</html>

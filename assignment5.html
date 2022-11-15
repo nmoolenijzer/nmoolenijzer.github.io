@@ -22,7 +22,7 @@
     </div>
     <div class="body-container">
         <div class="bio-container">
-            <h2>Steps</h2>
+            <h2>Steps (<a href="#part-2">jump to part 2!</a>)</h2>
             <div class="section">
                 <span class="numbers">
                     1
@@ -134,6 +134,56 @@
                     <img src="assets/assignment5/head_lamp_2.png" width="800px" />
                 </div>
             </div>
+            <div id="part-2" class="section">
+                <span class="numbers">
+                    9
+                </span>
+                <div>
+                    Starting part 2 of the lamp creation! I picked up from where I left off with the previous meshes of my head, but the meshes were "bad" meshes that needed to be reworked.
+                    <br />
+                    <br />
+                    To do this, I created panels around a single face mesh, then used boolean difference to create a single solid mesh. I then mirrored the fully solid mesh and used boolean union to join the two sides. 
+                    <br />
+                    <br />
+                    During this process, I tried out my first small print to make sure that this was feasible!
+                    <br />
+                    <img src="assets/assignment5/small_lamp.png" width="400px" />
+                </div>
+            </div>
+            <div class="section">
+                <span class="numbers">
+                    10
+                </span>
+                <div>
+                    After that, I downloaded some animals from Thingiverse, and started trying out some models and prints. I quickly realized I needed to split off a top section of the head and remesh any bad animal meshes, so I did just that! I then unioned the animal meshes to the separate panel to be on top of the head pieces.
+                    <br />
+                    <br />
+                    I also added a central cylinder that was large enough for the lamp plug to fit through and that could rest on top of the lamp innards to act as a lampshade. I used this to boolean difference the two pieces of the lamp.
+                    <br />
+                    <img src="assets/assignment5/lamp_complete.png" width="400px" />
+                </div>
+            </div>
+            <div class="section">
+                <span class="numbers">
+                    11
+                </span>
+                <div>
+                    Finally I started printing the real thing! I realized from my small test print that I needed to rotate the print so it was top side down if I want to use spiralize outer contour. So I rotated, turned on spiralize outer contour, and used tree supports.
+                    <br />
+                    <br />
+                    I printed the head separately which took quite a few hours over multiple started/stopped prints. I then printed the animal top panel as a solid, also with tree supports, which took another 9ish hours.
+                    <br />
+                    <br />
+                    Finally, I assembled! I had to pull out the cylinder from the head piece, then I attached the two panels using tape glue and then ran the cord through the hole in the top, and rested the lamp on the innards! I had to add a small counter weight inside of the shade, but otherwise it all worked out.
+                    <br />
+                    <img src="assets/assignment5/main_lamp.png" width="800px" />
+                    <img src="assets/assignment5/side_lamp.png" width="800px" />
+                    <video width="800" controls>
+                        <source src="assets/assignment5/lamp.mp4" type="video/mp4">
+                        Browser does not support video
+                    </video>
+                </div>
+            </div>
         </div>
         <div class="separator"></div>
         <div class="assignments-container">
@@ -141,6 +191,7 @@
             <div class="assignments">
                 <div class="assignment">
                     My creations:
+                    Part 1
                     <a href="assets/assignment5/headphone_stand_hands_FINAL.3dm" download>
                         <p>Merged headphone stand 3dm</p>
                     </a>
@@ -149,6 +200,17 @@
                     </a>
                     <a href="assets/assignment5/head.stl" download>
                         <p>Lamp preliminary stl</p>
+                    </a>
+                    My creations:
+                    Part 2
+                    <a href="assets/assignment5/lamp_model.3dm" download>
+                        <p>Lamp 3dm</p>
+                    </a>
+                    <a href="assets/assignment5/animals.stl" download>
+                        <p>Lamp top stl</p>
+                    </a>
+                    <a href="assets/assignment5/head_top.stl" download>
+                        <p>Lamp bottom stl</p>
                     </a>
                     External resources:
                     <a href="https://express.adobe.com/tools/convert-to-mp4">
@@ -165,6 +227,33 @@
                     </a>
                     <a href="https://apps.apple.com/us/app/polycam-lidar-3d-scanner/id1532482376">
                         <p>Polycam iOS app</p>
+                    </a>
+                    <a href="https://www.thingiverse.com/thing:118121/files">
+                        <p>Thingiverse pig</p>
+                    </a>
+                    <a href="https://www.thingiverse.com/thing:1717624/files">
+                        <p>Thingiverse snail</p>
+                    </a>
+                    <a href="https://www.thingiverse.com/thing:95721/files">
+                        <p>Thingiverse sheep</p>
+                    </a>
+                    <a href="https://www.thingiverse.com/thing:1602712">
+                        <p>Thingiverse cow</p>
+                    </a>
+                    <a href="https://www.thingiverse.com/thing:3373233/files">
+                        <p>Thingiverse goat</p>
+                    </a>
+                    <a href="https://www.google.com/search?q=fix+naked+edges&oq=fix+naked+edges&aqs=chrome..69i57.6763j0j1&sourceid=chrome&ie=UTF-8">
+                        <p>Google answer</p>
+                    </a>
+                    <a href="https://www.fictiv.com/articles/preparing-rhino-files-for-3d-printing#:~:text=Naked%20edges%20due%20to%20missing,model%20tolerance%20to%20join%20correctly.">
+                        <p>How to Prepare Rhino Files for 3D Printing</p>
+                    </a>
+                    <a href="https://www.google.com/search?q=snap+to+mesh+object+rhino">
+                        <p>Google answer</p>
+                    </a>
+                    <a href="https://www.w3docs.com/snippets/html/how-to-create-an-anchor-link-to-jump-to-a-specific-part-of-a-page.html">
+                        <p>W3 for web tool</p>
                     </a>
                     <p>Reddit and other forum/help group posts:
                         <a
