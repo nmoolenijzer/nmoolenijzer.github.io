@@ -42,6 +42,14 @@ th {
     font-weight: 800;
 }
 
+tr:nth-child(even) {
+    background-color: #d6e5d7;
+}
+
+td {
+    vertical-align: baseline;
+}
+
 th:first-of-type {
     width: 80px;
     text-align: left;
