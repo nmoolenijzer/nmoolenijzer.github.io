@@ -36,6 +36,18 @@ body {
     border-radius: 10px;
 }
 
+th {
+    width: 300px;
+    text-align: left;
+    font-weight: 800;
+}
+
+th:first-of-type {
+    width: 80px;
+    text-align: left;
+    font-weight: 800;
+}
+
 .section > div {
     flex-grow: 1;
 }
