@@ -22,16 +22,16 @@
 
     var scrollPrev = () => {
         var currentPosition = document.body?.scrollTop || document.documentElement.scrollTop;
-        currPage = Math.floor(currentPosition / window.outerHeight);
+        currPage = Math.floor(currentPosition / window.innerHeight);
         currPage -= 1
-        window.scrollTo({top: currPage * window.outerHeight, behavior: "smooth"})
+        window.scrollTo({top: currPage * window.innerHeight, behavior: "smooth"})
     }
 
     var scrollNext = () => {
         var currentPosition = document.body?.scrollTop || document.documentElement.scrollTop;
-        currPage = Math.floor(currentPosition / window.outerHeight);
+        currPage = Math.floor(currentPosition / window.innerHeight);
         currPage += 1
-        window.scrollTo({top: currPage * window.outerHeight, behavior: "smooth"})
+        window.scrollTo({top: currPage * window.innerHeight, behavior: "smooth"})
     }
 
 </script>
