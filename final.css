@@ -21,6 +21,10 @@ body {
     margin-right: 30px;
 }
 
+.arrow {
+    margin-left: 20px;
+}
+
 .material-symbols-outlined {
     font-size: 45px !important;
     margin-right: 20px;
@@ -52,6 +56,7 @@ body {
 }
 
 .card-title {
+    width: 400px;
     display: flex;
     flex-flow: row;
     justify-content: end;
@@ -70,6 +75,23 @@ body {
     font-weight: 600;
     align-self: center;
     flex-grow: 2;
+}
+
+.image-grid {
+    margin-right: 40px;
+}
+
+.download-link {
+    color: rgb(255, 170, 0);
+    font-weight: 600;
+}
+
+.download-link > p {
+    margin-block: 0;
+}
+
+.line > p {
+    margin-block: 0;
 }
 
 .line {
