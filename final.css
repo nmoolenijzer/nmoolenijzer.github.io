@@ -70,26 +70,6 @@ body {
     text-align: right;
 }
 
-.card-content {
-    font-size: 30px;
-    font-weight: 600;
-    align-self: center;
-    flex-grow: 2;
-}
-
-.image-grid {
-    margin-right: 40px;
-}
-
-.download-link {
-    color: rgb(255, 170, 0);
-    font-weight: 600;
-}
-
-.download-link > p {
-    margin-block: 0;
-}
-
 .line > p {
     margin-block: 0;
 }
@@ -99,7 +79,44 @@ body {
     display: flex;
     flex-flow: row;
     align-items: center;
+}
+
+.card-content {
+    font-size: 30px;
+    font-weight: 600;
+    align-self: center;
+    flex-grow: 2;
     width: 800px;
+}
+
+.fin-card-content {
+    display: flex;
+    flex-flow: row;
+    font-size: 30px;
+    align-self: center;
+    flex-grow: 2;
+    font-weight: 600;
+    width: 800px;
+}
+
+.fin-card-content > .line {
+    display: flex;
+    flex-flow: column;
+    align-items: baseline;
+}
+
+.image-grid {
+    margin-right: 40px;
+    margin-top: 40px;
+}
+
+.download-link {
+    color: rgb(255, 170, 0);
+    font-weight: 600;
+}
+
+.download-link > p {
+    margin-block: 0;
 }
 
 .body-container {
